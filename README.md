@@ -22,4 +22,4 @@
 
 ## Project
 
-Project source code is included in the practical submissions.
+The project work is included as part of the practical submissions in this repository.
