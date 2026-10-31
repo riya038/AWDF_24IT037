@@ -1,0 +1,119 @@
+.experience-section {
+  padding: 80px 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.experience-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.timeline {
+  position: relative;
+  border-left: 2px solid var(--border-color);
+  margin: 0 auto;
+  padding-left: 2.5rem;
+  max-width: 800px;
+  text-align: left;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 6px;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-glow);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--accent-color);
+  transform: translateX(-50%) scale(1.25);
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+.timeline-content {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.05);
+}
+
+.timeline-period {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem;
+}
+
+.timeline-institution {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0 0 1rem;
+}
+
+.timeline-details {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 1rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .timeline-title {
+    font-size: 1.15rem;
+  }
+}

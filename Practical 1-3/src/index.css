@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Colors */
+  --bg-primary: #0a0b10;
+  --bg-secondary: #12141d;
+  --card-bg: rgba(18, 20, 29, 0.75);
+  --input-bg: rgba(255, 255, 255, 0.02);
+  --border-color: rgba(255, 255, 255, 0.09);
+  --hover-bg: rgba(255, 255, 255, 0.05);
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  
+  --accent-color: #06b6d4; /* Neon Cyan Accent */
+  --accent-bg: rgba(6, 182, 212, 0.1);
+  --accent-glow: rgba(6, 182, 212, 0.35);
+  --nav-bg: rgba(10, 11, 16, 0.75);
+
+  /* Fonts */
+  --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  color-scheme: dark;
+}
+
+.light-mode {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --card-bg: rgba(255, 255, 255, 0.88);
+  --input-bg: rgba(0, 0, 0, 0.02);
+  --border-color: rgba(0, 0, 0, 0.12);
+  --hover-bg: rgba(0, 0, 0, 0.04);
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  --accent-color: #0891b2; /* Light Mode Cyan Accent */
+  --accent-bg: rgba(8, 145, 178, 0.1);
+  --accent-glow: rgba(8, 145, 178, 0.2);
+  --nav-bg: rgba(248, 250, 252, 0.85);
+  
+  color-scheme: light;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Section Common Styles */
+section {
+  position: relative;
+  width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background: var(--accent-color);
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+}

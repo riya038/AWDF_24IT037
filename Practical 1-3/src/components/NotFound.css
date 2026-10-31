@@ -1,0 +1,84 @@
+.notfound-container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.notfound-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(30px);
+}
+
+.notfound-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 500px;
+}
+
+.notfound-code {
+  font-size: 8rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent-color);
+  text-shadow: 0 0 30px var(--accent-glow);
+  margin-bottom: 1rem;
+}
+
+.notfound-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.notfound-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.notfound-home-btn {
+  display: inline-block;
+  background: var(--accent-color);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  transition: all 0.2s ease;
+}
+
+.notfound-home-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 576px) {
+  .notfound-code {
+    font-size: 5.5rem;
+  }
+
+  .notfound-title {
+    font-size: 1.6rem;
+  }
+
+  .notfound-text {
+    font-size: 0.95rem;
+  }
+}

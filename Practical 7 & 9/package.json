@@ -1,0 +1,13 @@
+{
+  "name": "practical-9-in-memory-caching",
+  "version": "1.0.0",
+  "description": "Practical 9: In-Memory Caching and Query Optimization with node-cache, Express, and MongoDB",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["node-cache", "in-memory-caching", "query-optimization", "jwt", "authentication", "mern", "express", "mongodb", "practical9"],
+  "author": "24IT037",
+  "license": "ISC"
+}

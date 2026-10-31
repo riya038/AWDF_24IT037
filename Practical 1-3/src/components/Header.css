@@ -1,0 +1,138 @@
+.header-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--accent-bg) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.header-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1.5px;
+}
+
+.header-title span {
+  transition: color 0.3s ease;
+}
+
+.header-tagline {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.header-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.header-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cta-button {
+  padding: 0.85rem 2rem;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+.cta-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-link:hover {
+  background-color: var(--hover-bg);
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2.75rem;
+  }
+  
+  .header-tagline {
+    font-size: 1.25rem;
+  }
+
+  .header-description {
+    font-size: 1rem;
+  }
+
+  .header-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
